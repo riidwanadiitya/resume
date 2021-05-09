@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+.warna-tulisan{
+  color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.jarakAtas{
+  margin-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.noMarginTop{
+  margin-top:-35px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.jarakNavbar{
+  position: fixed;
+  top:10px;
 }
 
-.App-link {
-  color: #61dafb;
+.backgroundNav{
+  background-color:white;
+  border-radius: 20px;
+  padding-left: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.jarakNavLink {
+  margin-right: 50px;
+  font-size: large;
+  font-weight: bold;
+}
+
+.backgroundItem{
+  background-color: black ;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.ukuranJumbotron {
+  padding-bottom: 150px;
+}
+
+.ukuranJumbotron2{
+  padding-bottom: 200px;
+}
+
+.tulisanJumbotron{
+margin-top: 300px;
+}
+
+.jumbotron1{
+  background-color: white;
+}
+
+.jumbotron2{
+  background-color: black;
+}
+
+.jumbotron3{
+  background-color: white;
+}
+.jumbotron4{
+  background-color: black;
+}
+
+.brandStyles{
+  margin-left: 20px;
 }
