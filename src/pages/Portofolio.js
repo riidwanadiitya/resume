@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import { Container, Image, Grid } from 'semantic-ui-react'
 
+import foto1 from '../images/0005.jpg'
+
+
 export class Portofolio extends Component {
     render() {
         return (
@@ -11,25 +14,25 @@ export class Portofolio extends Component {
                         <Grid columns={3} divided>
                             <Grid.Row>
                                 <Grid.Column>
-                                    <Image src='http://localhost:3000/images/0005.jpg' />
+                                    <Image src={foto1} />
                                 </Grid.Column>
                                 <Grid.Column>
-                                    <Image src='http://localhost:3000/images/0005.jpg' />
+                                    <Image src={foto1} />
                                 </Grid.Column>
                                 <Grid.Column>
-                                    <Image src='http://localhost:3000/images/0005.jpg' />
+                                    <Image src={foto1} />
                                 </Grid.Column>
                             </Grid.Row>
 
                             <Grid.Row>
                                 <Grid.Column>
-                                    <Image src='http://localhost:3000/images/0005.jpg' />
+                                    <Image src={foto1} />
                                 </Grid.Column>
                                 <Grid.Column>
-                                    <Image src='http://localhost:3000/images/0005.jpg' />
+                                    <Image src={foto1} />
                                 </Grid.Column>
                                 <Grid.Column>
-                                    <Image src='http://localhost:3000/images/0005.jpg' />
+                                    <Image src={foto1} />
                                 </Grid.Column>
                             </Grid.Row>
                         </Grid>

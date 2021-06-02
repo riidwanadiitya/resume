@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import { Container, Grid, Image, Header, Button, Icon, } from 'semantic-ui-react'
+import { Container, Grid, Image, Header, Button, Icon, } from 'semantic-ui-react';
+
+import foto1 from '../images/0005.jpg'
 
 export class Home extends Component {
     render() {
@@ -10,7 +12,7 @@ export class Home extends Component {
                     <Grid >
                         <Grid.Column floated='left' width={6} >
 
-                            <Image src='http://localhost:3000/images/0005.jpg' circular />
+                            <Image src={foto1} circular />
 
                         </Grid.Column>
                         <Grid.Column floated='right' width={7}>
