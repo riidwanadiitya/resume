@@ -7,11 +7,13 @@ import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Portofolio from './pages/Portofolio';
 
+import './App.css';
+
 
 export class Routes extends Component {
     render() {
         return (
-            <div>
+            <div className='bgColor'>
                 <Router>
                     <Brand />
                     <Navigation />

@@ -6,7 +6,7 @@ export class Brand extends Component {
     render() {
         return (
             <div>
-                <Header as="h2" className="brandStyles" style={{ marginTop: 10 }}>
+                <Header as="h2" className="brandStyles" style={{ paddingTop: 10 }}>
                     <Image className="brandStyles" circular src='http://localhost:3000/images/0005.jpg' /> Ridwan
                 </Header>
             </div>

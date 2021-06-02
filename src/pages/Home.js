@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import { Card, Container, Grid, Image, Header, Button, Icon, Segment, } from 'semantic-ui-react'
+import { Container, Grid, Image, Header, Button, Icon, } from 'semantic-ui-react'
 
 export class Home extends Component {
     render() {
         return (
             <div>
-                <Container style={{ marginTop: 30, paddingLeft: 50, paddingRight: 50 }}>
+                <Container style={{ marginTop: 30, paddingLeft: 50, paddingRight: 50, paddingBottom: 100 }}>
                     <Grid >
                         <Grid.Column floated='left' width={6} >
 
@@ -14,11 +14,11 @@ export class Home extends Component {
 
                         </Grid.Column>
                         <Grid.Column floated='right' width={7}>
-                            <Header as="h2" textAlign="center" style={{ marginTop: 60 }}>Hello, I'm Ridwan.</Header>
+                            <Header as="h1" textAlign="center" style={{ marginTop: 60 }}>Hello, I'm Ridwan.</Header>
                             <Header as="h3" textAlign='center' style={{ marginTop: -10 }}>Frontend Developer</Header>
-                            <Segment style={{ fontSize: 20 }}>
+                            <Header as="h3" textAlign='center'>
                                 I'm an Indonesian frontend developer. I am pasionate about building exelent website.
-                            </Segment>
+                                </Header>
                             <Button animated floated="right" as={Link} to="/about">
                                 <Button.Content visible>More Info</Button.Content>
                                 <Button.Content hidden ><Icon name='right arrow'></Icon></Button.Content>

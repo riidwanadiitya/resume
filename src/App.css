@@ -1,3 +1,8 @@
+.bgColor{
+  background-color: white;
+  background-size: contain;
+}
+
 .warna-tulisan{
   color: black;
 }
@@ -62,4 +67,9 @@ margin-top: 300px;
 
 .brandStyles{
   margin-left: 20px;
+}
+
+.inputStyle { 
+  border-radius: 15px;
+  outline-color: red;
 }
