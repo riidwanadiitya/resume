@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Header, Image } from 'semantic-ui-react';
 import '../App.css';
 
-import foto1 from '../images/0005.jpg'
+import foto1 from '../images/ridwan.jpg'
 
 export class Brand extends Component {
     render() {

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { Container, Grid, Image, Header, Button, Icon, } from 'semantic-ui-react';
 
-import foto1 from '../images/0005.jpg'
+import foto1 from '../images/ridwan.jpg'
 
 export class Home extends Component {
     render() {

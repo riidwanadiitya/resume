@@ -41,11 +41,11 @@ export class About extends Component {
                         <Grid.Column width={7} textAlign="center" style={{ marginTop: 100 }}>
                             <Button animated>
                                 <Button.Content visible>Click Me to Download</Button.Content>
-                                <Button.Content hidden>Download Now</Button.Content>
+                                <Button.Content hidden><a href="https://drive.google.com/file/d/15-VjTEpJTGEYIdz3pdJSaPErmfwjBIg0/view" target="_blank" rel="noopener noreferrer" style={{ color: 'black' }}>Download Now </a></Button.Content>
                             </Button><br /><br />
                             <Button animated>
                                 <Button.Content visible>Hire Me</Button.Content>
-                                <Button.Content hidden as={Link} to='/contact'>Now <Icon name='arrow right' /> </Button.Content>
+                                <Button.Content hidden as={Link} to='/contact' style={{ color: 'black' }}>Now <Icon name='arrow right' /> </Button.Content>
                             </Button>
                         </Grid.Column>
                     </Grid>
