@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Grid, Header, Form, Button, Icon } from 'semantic-ui-react';
+import { Container, Grid, Header, Button, Icon } from 'semantic-ui-react';
 
 import '../App.css';
 
@@ -29,15 +29,6 @@ export class Contact extends Component {
                                     <Button color='negative' href="mailto:riidwanadiitya@gmail.com" target="_blank ">
                                         <Icon name='envelope outline' /> Gmail
                                     </Button>
-                                    {/* <Form>
-                                        <Form.Group widths="equal" >
-                                            <Form.Input label='First name' placeholder='First name' />
-                                            <Form.Input fluid label='Last name' placeholder='Last name' />
-                                        </Form.Group>
-                                        <Form.TextArea label='Message' placeholder='Tell us more about you...' />
-                                        <Button positive>Send</Button>
-
-                                    </Form> */}
 
                                     <Header as='h3' style={{ marginTop: 50 }}>Jl. Kolonel Bustomi Burhanudin, Kp. Caringin RT 002 / RW 002 Desa. Caringin, Kab. Bogor 16730 - Jawa Barat</Header>
                                 </Grid.Column>

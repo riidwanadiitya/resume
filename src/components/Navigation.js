@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Grid, Menu, Input } from 'semantic-ui-react';
+import { Grid, Menu } from 'semantic-ui-react';
 
 
 import '../App.css';
@@ -42,43 +42,12 @@ export class Navigation extends Component {
                                 onClick={this.handleItemClick}
                                 as={Link} to="/contact"
                             />
-                            {/* <Menu.Item as={Link} to="/" >Home</Menu.Item>
-                            <Menu.Item as={Link} to="/about">About</Menu.Item>
-                            <Menu.Item as={Link} to="/portofolio">Portofolio</Menu.Item>
-                            <Menu.Item as={Link} to="/contact">Contact</Menu.Item> */}
+
                         </Menu>
                     </Grid.Column>
                 </Grid>
 
-                {/* <Menu secondary>
-                    <Menu.Item
-                        name='home'
-                        active={activeItem === 'home'}
-                        onClick={this.handleItemClick}
-                        as={Link} to="/"
-                    />
-                    <Menu.Item
-                        name='about'
-                        active={activeItem === 'about'}
-                        onClick={this.handleItemClick}
-                        as={Link} to="/about"
-                    />
-                    <Menu.Item
-                        name='friends'
-                        active={activeItem === 'friends'}
-                        onClick={this.handleItemClick}
-                    />
-                    <Menu.Menu position='right'>
-                        <Menu.Item>
-                            <Input icon='search' placeholder='Search...' />
-                        </Menu.Item>
-                        <Menu.Item
-                            name='logout'
-                            active={activeItem === 'logout'}
-                            onClick={this.handleItemClick}
-                        />
-                    </Menu.Menu>
-                </Menu> */}
+
             </div>
         )
     }
