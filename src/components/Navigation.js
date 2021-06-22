@@ -16,33 +16,34 @@ export class Navigation extends Component {
         return (
             <div>
                 <Grid>
-                    <Grid.Column floated='right' width={5} className="jarakNavbar">
+                    <Grid.Column floated='right'>
                         <Menu secondary>
-                            <Menu.Item
-                                name='home'
-                                active={activeItem === 'home'}
-                                onClick={this.handleItemClick}
-                                as={Link} to="/"
-                            />
-                            <Menu.Item
-                                name='about'
-                                active={activeItem === 'about'}
-                                onClick={this.handleItemClick}
-                                as={Link} to="/about"
-                            />
-                            <Menu.Item
-                                name='portofolio'
-                                active={activeItem === 'portofolio'}
-                                onClick={this.handleItemClick}
-                                as={Link} to="/portofolio"
-                            />
-                            <Menu.Item
-                                name='contact'
-                                active={activeItem === 'contact'}
-                                onClick={this.handleItemClick}
-                                as={Link} to="/contact"
-                            />
-
+                            <Menu.Menu position="right">
+                                <Menu.Item
+                                    name='home'
+                                    active={activeItem === 'home'}
+                                    onClick={this.handleItemClick}
+                                    as={Link} to="/"
+                                />
+                                <Menu.Item
+                                    name='about'
+                                    active={activeItem === 'about'}
+                                    onClick={this.handleItemClick}
+                                    as={Link} to="/about"
+                                />
+                                <Menu.Item
+                                    name='portofolio'
+                                    active={activeItem === 'portofolio'}
+                                    onClick={this.handleItemClick}
+                                    as={Link} to="/portofolio"
+                                />
+                                <Menu.Item
+                                    name='contact'
+                                    active={activeItem === 'contact'}
+                                    onClick={this.handleItemClick}
+                                    as={Link} to="/contact"
+                                />
+                            </Menu.Menu>
                         </Menu>
                     </Grid.Column>
                 </Grid>

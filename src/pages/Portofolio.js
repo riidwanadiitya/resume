@@ -9,7 +9,7 @@ export class Portofolio extends Component {
         return (
             <div>
                 <Container textAlign="center" style={{ paddingBottom: 100 }}>
-                    <h1 >Portofolio Page...</h1>
+                    <h1 >Portofolio </h1>
                     <Container style={{ marginLeft: 50, marginRight: 50 }}>
                         <Grid columns={3} divided>
                             <Grid.Row>
