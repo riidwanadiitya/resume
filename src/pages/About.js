@@ -42,7 +42,7 @@ export class About extends Component {
                             <Grid.Column textAlign="center" style={{ marginTop: 100 }}>
                                 <Button animated>
                                     <Button.Content visible>Click Me to Download</Button.Content>
-                                    <Button.Content hidden><a href="https://drive.google.com/file/d/15-VjTEpJTGEYIdz3pdJSaPErmfwjBIg0/view" target="_blank" rel="noopener noreferrer" style={{ color: 'black' }}>Download Now </a></Button.Content>
+                                    <Button.Content hidden><a href="https://drive.google.com/file/d/1f46juAQkFB_SLV1F8cjjJ4h7b9XoRxRZ/view" target="_blank" rel="noopener noreferrer" style={{ color: 'black' }}>Download Now </a></Button.Content>
                                 </Button><br /><br />
                                 <Button animated>
                                     <Button.Content visible>Hire Me</Button.Content>
