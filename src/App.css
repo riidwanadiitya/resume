@@ -1,10 +1,10 @@
-.bgColor{
-  background-color: white;
-  background-size: contain;
+.bg1{
+  background-image: url('../src/images/12.jpg');
+  background-size: cover;
 }
 
 .warna-tulisan{
-  color: black;
+  color: white;
 }
 
 .jarakAtas{

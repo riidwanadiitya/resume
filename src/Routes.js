@@ -13,7 +13,7 @@ import './App.css';
 export class Routes extends Component {
     render() {
         return (
-            <div className='bgColor'>
+            <div className="bg1">
                 <Router>
                     <Brand />
                     <Navigation />

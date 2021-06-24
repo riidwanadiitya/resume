@@ -5,7 +5,7 @@ import Navigation from './components/Navigation'
 export class App extends Component {
   render() {
     return (
-      <div >
+      <div style={{ backgroundColor: 'transparent' }} >
         <Brand />
         <Navigation />
       </div>
