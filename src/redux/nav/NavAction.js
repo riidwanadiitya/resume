@@ -14,7 +14,6 @@ export const activeAbout = () => {
     }
 };
 
-
 export const activeContact = () => {
     return {
         type: ACTIVE_PAGE,

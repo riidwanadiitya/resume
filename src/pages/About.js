@@ -51,10 +51,10 @@ export class About extends Component {
                                         <Button.Content visible>Click Me to Download</Button.Content>
                                         <Button.Content hidden><a href="https://drive.google.com/file/d/1f46juAQkFB_SLV1F8cjjJ4h7b9XoRxRZ/view" target="_blank" rel="noopener noreferrer" style={{ color: 'black' }}>Download Now </a></Button.Content>
                                     </Button><br /><br />
-                                    <Button animated
+                                    <Button animated as={Link} to='/contact'
                                         onClick={this.props.activePage}>
                                         <Button.Content visible>Hire Me</Button.Content>
-                                        <Button.Content hidden as={Link} to='/contact' style={{ color: 'black' }}>Now <Icon name='arrow right' /> </Button.Content>
+                                        <Button.Content hidden style={{ color: 'black' }}>Now <Icon name='arrow right' /> </Button.Content>
                                     </Button>
                                 </Grid.Column>
                             </Grid>
