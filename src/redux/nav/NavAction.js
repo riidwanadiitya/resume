@@ -14,12 +14,6 @@ export const activeAbout = () => {
     }
 };
 
-export const activePortofolio = () => {
-    return {
-        type: ACTIVE_PAGE,
-        payload: "portofolio"
-    }
-};
 
 export const activeContact = () => {
     return {
