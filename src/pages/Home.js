@@ -14,31 +14,33 @@ export class Home extends Component {
             <div>
                 <Container fluid style={{ marginTop: 30, paddingLeft: 50, paddingRight: 50, paddingBottom: 100 }}>
                     <Transition animation='browse' duration={1300} transitionOnMount>
-                        <Segment placeholder>
-                            <Grid columns={2} stackable textAlign='center'>
-                                <Grid.Row verticalAlign='middle'>
-                                    <Grid.Column>
-                                        <Header >
-                                            <Image src={foto1} circular style={{ width: "70%" }} />
-                                        </Header>
-                                    </Grid.Column>
-                                    <Grid.Column>
-                                        <Header >
-                                            <Header as="h1" textAlign="center" style={{ marginTop: 60 }}>Hello, I'm Ridwan.</Header>
-                                            <Header as="h3" textAlign='center' style={{ marginTop: -10 }}>Frontend Developer</Header>
-                                            <Header as="h3" textAlign='center'>
-                                                I'm an Indonesian frontend developer. I am pasionate about building exelent website.
+                        <Container style={{ paddingLeft: -100, paddingRight: -100 }}>
+                            <Segment placeholder style={{ marginLeft: -40, marginRight: -40 }}>
+                                <Grid columns={2} stackable textAlign='center'>
+                                    <Grid.Row verticalAlign='middle'>
+                                        <Grid.Column>
+                                            <Header >
+                                                <Image src={foto1} circular style={{ width: "70%" }} />
                                             </Header>
-                                        </Header>
-                                        <Button animated textAlign="center" as={Link} to="/about"
-                                            onClick={this.props.activePage}>
-                                            <Button.Content visible style={{ color: "black" }}>More Info</Button.Content>
-                                            <Button.Content hidden ><Icon name='right arrow'></Icon></Button.Content>
-                                        </Button>
-                                    </Grid.Column>
-                                </Grid.Row>
-                            </Grid>
-                        </Segment>
+                                        </Grid.Column>
+                                        <Grid.Column>
+                                            <Header >
+                                                <Header as="h1" textAlign="center" style={{ marginTop: 60 }}>Hello, I'm Ridwan.</Header>
+                                                <Header as="h3" textAlign='center' style={{ marginTop: -10 }}>Frontend Developer</Header>
+                                                <Header as="h3" textAlign='center'>
+                                                    I'm an Indonesian frontend developer. I am pasionate about building exelent website.
+                                                </Header>
+                                            </Header>
+                                            <Button animated textAlign="center" as={Link} to="/about"
+                                                onClick={this.props.activePage}>
+                                                <Button.Content visible style={{ color: "black" }}>More Info</Button.Content>
+                                                <Button.Content hidden ><Icon name='right arrow'></Icon></Button.Content>
+                                            </Button>
+                                        </Grid.Column>
+                                    </Grid.Row>
+                                </Grid>
+                            </Segment>
+                        </Container>
                     </Transition>
                 </Container>
             </div >

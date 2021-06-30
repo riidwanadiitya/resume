@@ -7,13 +7,13 @@ export class Contact extends Component {
     render() {
         return (
             <div>
-                <Container textAlign="right" style={{ marginTop: 30, paddingLeft: 50, paddingRight: 50, paddingBottom: 170 }} >
+                <Container textAlign="right" style={{ marginTop: 30, paddingLeft: 50, paddingRight: 50, paddingBottom: 100 }} >
                     <Transition animation="fade right" duration={2500} transitionOnMount>
                         <Header as='h1' style={{ color: "white" }}>Contact</Header>
                     </Transition>
                     <Transition animation='zoom' duration={2500} transitionOnMount>
-                        <Container style={{ marginTop: 50 }}>
-                            <Segment placeholder>
+                        <Container style={{ paddingLeft: -100, paddingRight: -100 }} fluid>
+                            <Segment placeholder style={{ marginLeft: -55, marginRight: -55 }}>
                                 <Grid columns={2} stackable textAlign='center'>
                                     <Grid.Row >
                                         <Grid.Column width={6}><Header as="h1" style={{ marginBottom: 50 }} >DON'T BE SHY!</Header>
