@@ -9,7 +9,7 @@ export class About extends Component {
     render() {
         return (
             <div>
-                <Container fluid style={{ marginTop: 30, paddingLeft: 50, paddingRight: 50, paddingBottom: 170 }}>
+                <Container textAlign="left" style={{ marginTop: 30, paddingLeft: 50, paddingRight: 50, paddingBottom: 100 }} >
                     <Transition animation="fade left" duration={1500} transitionOnMount>
                         <Header as='h1' style={{ color: "white" }}>About</Header>
                     </Transition>
