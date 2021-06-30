@@ -24,15 +24,15 @@ export class Contact extends Component {
 
                                         <Grid.Column >
                                             <Header as="h1" style={{ marginBottom: 50 }}>Social Media</Header>
-                                            <Button animated color="instagram" style={{ width: 200 }}>
+                                            <Button animated color="instagram" style={{ width: 170 }}>
                                                 <Button.Content visible><Icon name="instagram" /> Instagram</Button.Content>
                                                 <Button.Content hidden><a href="https://www.instagram.com/riidwanadiitya/" target="_blank" rel="noopener noreferrer" style={{ color: 'white' }}>@riidwanadiitya </a></Button.Content>
                                             </Button>
-                                            <Button animated positive style={{ width: 200 }}>
+                                            <Button animated positive style={{ width: 170 }}>
                                                 <Button.Content visible><Icon name="whatsapp" /> Whatsapp</Button.Content>
                                                 <Button.Content hidden><a href="https://wa.me/6289639247810" target="_blank" rel="noopener noreferrer" style={{ color: 'white' }}>+62-896-3924-7810 </a></Button.Content>
                                             </Button>
-                                            <Button animated negative style={{ width: 200 }}>
+                                            <Button animated negative style={{ width: 170 }}>
                                                 <Button.Content visible><Icon name="envelope outline" /> Gmail</Button.Content>
                                                 <Button.Content hidden><a href="https://wa.me/6289639247810" target="_blank" rel="noopener noreferrer" style={{ color: 'white' }}>riidwanadiitya@gmail.com </a></Button.Content>
                                             </Button>
