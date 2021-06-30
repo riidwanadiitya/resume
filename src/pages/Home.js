@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Grid, Image, Header, Button, Icon, Segment, Transition } from 'semantic-ui-react';
+import { connect } from 'react-redux';
+import { activeAbout } from '../redux';
+
 
 import foto1 from '../images/no-bg2.png';
 import '../App.css';
@@ -27,7 +30,8 @@ export class Home extends Component {
                                                 I'm an Indonesian frontend developer. I am pasionate about building exelent website.
                                             </Header>
                                         </Header>
-                                        <Button animated textAlign="center" as={Link} to="/about">
+                                        <Button animated textAlign="center" as={Link} to="/about"
+                                            onClick={this.props.activePage}>
                                             <Button.Content visible style={{ color: "black" }}>More Info</Button.Content>
                                             <Button.Content hidden ><Icon name='right arrow'></Icon></Button.Content>
                                         </Button>
@@ -42,4 +46,16 @@ export class Home extends Component {
     }
 }
 
-export default Home
+function mapStateToProps(state) {
+    return {
+        navActive: state.navigation.activePage,
+    }
+};
+
+function mapDispatchToProps(dispatch) {
+    return {
+        activePage: (e) => dispatch(activeAbout()),
+    }
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home);

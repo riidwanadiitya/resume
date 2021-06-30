@@ -1,51 +1,47 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Grid, Menu, Container } from 'semantic-ui-react';
+import { connect } from 'react-redux';
 
-
+import { activePage } from '../redux';
 import '../App.css';
 
 
 export class Navigation extends Component {
-    state = { activeItem: 'home' }
-
-    handleItemClick = (e, { name }) => this.setState({ activeItem: name })
-
     render() {
-        const { activeItem } = this.state
         return (
             <div>
                 <Container>
                     <Grid>
                         <Grid.Column>
-                            <Menu secondary>
+                            <Menu pointing secondary >
                                 <Menu.Menu position="right" >
                                     <Menu.Item
                                         name='home'
-                                        active={activeItem === 'home'}
-                                        onClick={this.handleItemClick}
                                         as={Link} to="/"
+                                        active={this.props.navActive === 'home'}
+                                        onClick={this.props.activePage}
                                         style={{ color: "white" }}
                                     />
                                     <Menu.Item
                                         name='about'
-                                        active={activeItem === 'about'}
-                                        onClick={this.handleItemClick}
                                         as={Link} to="/about"
+                                        active={this.props.navActive === 'about'}
+                                        onClick={this.props.activePage}
                                         style={{ color: "white" }}
                                     />
                                     <Menu.Item
                                         name='portofolio'
-                                        active={activeItem === 'portofolio'}
-                                        onClick={this.handleItemClick}
                                         as={Link} to="/portofolio"
+                                        active={this.props.navActive === 'portofolio'}
+                                        onClick={this.props.activePage}
                                         style={{ color: "white" }}
                                     />
                                     <Menu.Item
                                         name='contact'
-                                        active={activeItem === 'contact'}
-                                        onClick={this.handleItemClick}
                                         as={Link} to="/contact"
+                                        active={this.props.navActive === 'contact'}
+                                        onClick={this.props.activePage}
                                         style={{ color: "white" }}
                                     />
                                 </Menu.Menu>
@@ -56,6 +52,17 @@ export class Navigation extends Component {
             </div>
         )
     }
-}
+};
 
-export default Navigation
+function mapStateToProps(state) {
+    return {
+        navActive: state.navigation.activePage,
+    }
+};
+
+function mapDispatchToProps(dispatch) {
+    return {
+        activePage: (e, { name }) => dispatch(activePage(name)),
+    }
+};
+export default connect(mapStateToProps, mapDispatchToProps)(Navigation);

@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Button, Container, Grid, Header, Icon, Segment, Table, Transition } from 'semantic-ui-react';
 
-
+import { connect } from 'react-redux';
+import { activeContact } from '../redux';
 
 export class About extends Component {
     render() {
@@ -50,7 +51,8 @@ export class About extends Component {
                                         <Button.Content visible>Click Me to Download</Button.Content>
                                         <Button.Content hidden><a href="https://drive.google.com/file/d/1f46juAQkFB_SLV1F8cjjJ4h7b9XoRxRZ/view" target="_blank" rel="noopener noreferrer" style={{ color: 'black' }}>Download Now </a></Button.Content>
                                     </Button><br /><br />
-                                    <Button animated>
+                                    <Button animated
+                                        onClick={this.props.activePage}>
                                         <Button.Content visible>Hire Me</Button.Content>
                                         <Button.Content hidden as={Link} to='/contact' style={{ color: 'black' }}>Now <Icon name='arrow right' /> </Button.Content>
                                     </Button>
@@ -64,4 +66,16 @@ export class About extends Component {
     }
 }
 
-export default About
+function mapStateToProps(state) {
+    return {
+        navActive: state.navigation.activePage,
+    }
+};
+
+function mapDispatchToProps(dispatch) {
+    return {
+        activePage: (e) => dispatch(activeContact()),
+    }
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(About);
